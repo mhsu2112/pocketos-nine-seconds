@@ -166,12 +166,12 @@ h1 { font-size: 22px; font-weight: 500; margin: 0 0 4px 0; }
 
   for (var s = 0; s <= 9; s++) {
     var x = xAt(s);
-    var tick = document.createElementNS(SVG_NS, 'line');
-    tick.setAttribute('x1', x); tick.setAttribute('x2', x);
-    tick.setAttribute('y1', 25); tick.setAttribute('y2', 32);
-    tick.setAttribute('stroke', 'var(--color-border-secondary)');
-    tick.setAttribute('stroke-width', '1');
-    svg.appendChild(tick);
+    var tickMark = document.createElementNS(SVG_NS, 'line');
+    tickMark.setAttribute('x1', x); tickMark.setAttribute('x2', x);
+    tickMark.setAttribute('y1', 25); tickMark.setAttribute('y2', 32);
+    tickMark.setAttribute('stroke', 'var(--color-border-secondary)');
+    tickMark.setAttribute('stroke-width', '1');
+    svg.appendChild(tickMark);
 
     var lbl = document.createElementNS(SVG_NS, 'text');
     lbl.setAttribute('x', x); lbl.setAttribute('y', 18);
